@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Garamond', serif; 
+    box-sizing: border-box;
+}
+
+body {
+    background: #e9dde2;    /* background color -- pastel pink */
+    color: #3e413b;    /* text color -- grey */
+}
+
+
+/*
+ * Header of Webpage
+ */
+
+#header {   /* hashtag bc it is an id */
+    width: 100%;
+    height: 100vh; 
+    background-image: url(me.png);    /* make a png immage of myself in adobe */
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container{
+    padding: 10px 10px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nameIcon{
+    width: 400px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 15px 20px;
+}
+
+nav ul li a{
+    color: #3e413b;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Hover Effect setup */
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #a9b79f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+/* Hover effect initiation */
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+.header-text h1{
+    margin-top: 20px;
+    font-size: 60px;
+}
+
+
+/*
+ * About Me Page 
+ */
+
+#about{
+    padding: 80px 0;
+    background-color: #3e413b;
+    color: #e9dde2;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.aboutPhoto{
+    flex-basis: 35%;
+}
+
+.aboutPhoto img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.aboutText{
+    flex-basis: 60%;
+    font-size: 25px;
+}
+
+.aboutMeText{
+    font-size: 60px;
+    font-weight: bold;
+    color: #a9b79f;
+}
+
+.tabTitles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tabLinks{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+.tabLinks::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #a9b79f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tabLinks.activeLink::after{
+    width: 50%;
+}
+
+.tabContents ul li{
+    list-style: circle;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.tabContents ul li span{
+    font-weight: bold;
+    color: #a9b79f;
+    font-size: 14px;
+}
+
+.tabContents{
+    display: none;
+}
+
+.tabContents.activeTab{
+    display: block;
+}
+
