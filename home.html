@@ -9,11 +9,9 @@
 
     <!-- set browser tab title -->
     <title>
-        Elizabeth Witney's Portfolio   
+        Elizabeth Witney's Portfolio
     </title>
-
-    <!-- link to css sheet -->
-    <link rel = "stylesheet" href="style.css"> 
+    <link rel = "stylesheet" href="style.css">
 </head>
 
 <!-- main body of the page -->
@@ -25,15 +23,12 @@
         <!-- section of header : hContainer -->
         <div class = "container">
             <nav>
-                <img src = "meNOMBRE.png" class = "nameIcon" > 
+                <img src = "images/meNOMBRE.png" class = "nameIcon" > 
                 <ul>
-                    <li><a href = "#">Home</a></li>
-
-                    <li><a href = "#">About</a></li>
-
-                    <li><a href = "#">Projects</a></li>
-
-                    <li><a href = "#">Contact</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>               
             </nav>
             <div class = "header-text">
@@ -48,81 +43,7 @@
         </div>
     </div>
 
-    <!-- About Me Page : about -->
-    <div id = "about">
-        <div class="container">
-            <div class="row">
-                <div class="aboutPhoto">
-                    <img src = "me&mom.png">   <!-- change to photo of me,, made do some timed rotating images??? -->
-                </div>
-                <div class="aboutText">
-                    <h1 class = "aboutMeText">
-                        About Me
-                    </h1>
-                    <p>
-                        blah blah blah blah blah blah blah blah blah blah blah blah
-                        blah blah blah blah blah blah blah blah blah blah blah blah 
-                        blah blah blah blah blah blah blah blah blah blah blah blah 
-                        blah blah blah blah blah blah blah blah blah blah blah blah 
-                        blah blah blah blah blah blah blah blah blah blah blah blah
-                        blah blah blah blah blah blah blah blah blah blah blah blah 
-                        blah blah blah blah blah blah blah blah blah blah blah blah 
-                        blah blah blah blah blah blah blah blah blah blah blah blah                     
-                    </p>
-                    
-                    <div class = "tabTitles">
-                        <p class = "tabLinks activeLink" onclick = "openTab('skills')"> 
-                            Skills
-                        </p>
-                        <p class = "tabLinks" onclick = "openTab('experience')"> 
-                            Experience
-                        </p>
-                        <p class = "tabLinks" onclick = "openTab('education')"> 
-                            Education
-                        </p>
-                    </div>
-                    <div class="tabContents activeTab" id = "skills">
-                        <ul>
-                            <li><span>CODE</span><br>I can code</li>
-                            <li><span>SOCCER</span><br>I can soccer</li>
-                            <li><span>SLEEP</span><br>I am a pro</li>
-                        </ul>
-                    </div>
 
-                    <div class="tabContents" id = "experience">
-                        <ul>
-                            <li><span>COSMIAC</span><br>I can worked here</li>
-                            <li><span>UNP</span><br>summer intern</li>
-                            <li><span>Soccer Coach</span><br>worked with kids</li>
-                            <li><span>Bar Back/Busser at Elements</span><br>bar back and busser</li>
-                            <li><span>Ski Instructor</span><br>worked with kids</li>
-                        </ul>
-                    </div>
-
-                    <div class="tabContents" id = "education">
-                        <ul>
-                            <li><span>University of New Mexico -- Albuquerque, New Mexico</span><br>Pursuing bachlors in Computer scince w/ minor in math</li>
-                            <li><span>Aalto University -- Espoo, Finland</span><br>Did a year abroad studying Digital Systems and Design</li>
-                            <li><span>Moreno Valley High School -- Angel Fire, New Mexico</span><br>Graduated from high school here</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Servicessss ;) -->
-    <div id = "services">
-        <div class = "container">
-            <h1 class = "aboutMeText">
-                My Services
-            </h1>
-            <div class="servicesList">
-                
-            </div>
-        </div>
-    </div>
 
     <script>
         var tab_links = document.getElementsByClassName("tabLinks");
@@ -146,3 +67,4 @@
 </body>
 </html>
 
+<!-- https://codepen.io/ainalem/pen/JxEqzW   for cool click effect -->
