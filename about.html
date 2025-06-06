@@ -93,6 +93,24 @@
                 </div>
             </div>
         </div>
+
+    <script>
+        var tab_links = document.getElementsByClassName("tabLinks");
+        var tab_contents = document.getElementsByClassName("tabContents");
+
+        function openTab(tabName){
+            for(tab_link of tab_links){
+                tab_link.classList.remove("activeLink")
+            }
+            for(tab_content of tab_contents){
+                tab_content.classList.remove("activeTab")
+            }
+            event.currentTarget.classList.add("activeLink");
+            document.getElementById(tabName).classList.add("activeTab");
+        }
+
+    </script>
+
     </div>
 </body>
 </html>
