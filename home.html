@@ -3,9 +3,10 @@
 
 <!-- define mata info -->
 <head>
-    <meta charse t = "UTF - 8">
-    <meta http-equiv ="X - UA - Compatible" content = "IE = edge">
-    <meta name = "viewpoint" content = "width = device - width, initial - scale = 1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <!-- set browser tab title -->
     <title>
@@ -18,52 +19,26 @@
 <body>
 
     <!-- header of website : header --> 
-    <div id = "header">
+    <div id="header">
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-        <!-- section of header : hContainer -->
-        <div class = "container">
-            <nav>
-                <img src = "images/meNOMBRE.png" class = "nameIcon" > 
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>               
-            </nav>
-            <div class = "header-text">
-                <p>
-                    Student Researcher 
-                </p>
-                <h1>
-                    Hello & <br> Welcome
-                </h1>
-            </div>
-
-        </div>
+    <!-- New wrapper just for centering the text -->
+    <div class="centered-header-text">
+      <div class="header-text">
+        <p>Elizabeth Witney</p>
+        <h1>Research Engineer</h1>
+      </div>
     </div>
-
-
-
-    <script>
-        var tab_links = document.getElementsByClassName("tabLinks");
-        var tab_contents = document.getElementsByClassName("tabContents");
-
-        function openTab(tabName){
-            for(tab_link of tab_links){
-                tab_link.classList.remove("activeLink")
-            }
-            for(tab_content of tab_contents){
-                tab_content.classList.remove("activeTab")
-            }
-            event.currentTarget.classList.add("activeLink");
-            document.getElementById(tabName).classList.add("activeTab");
-        }
-
-    </script>
-
-
-
+  </div>
+</div>
 </body>
 </html>
 
